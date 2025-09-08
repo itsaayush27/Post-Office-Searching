@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Office Application</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4874/4874918.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+  <h2>Post Office Application</h2>
+</header>
+
+<div class="container" id="start-section">
+  <div class="card">
+    <h3>Your Current IP Address is <span id="ip"></span></h3>
+    <button onclick="getUserDetails()">Get Started</button>
+  </div>
+</div>
+
+<div id="details-section">
+  <h3>IP Address: <span id="ip-details"></span></h3>
+  <p>City: <span id="city"></span> | Region: <span id="region"></span></p>
+  <p>Organization: <span id="org"></span></p>
+  <p>Host: <span id="hostname"></span></p>
+
+  <div class="info">
+  <h4>Search by Pincode</h4>
+  <input type="text" id="pincode-input" placeholder="Enter Pincode">
+  <button onclick="searchByPincode()">Search</button>
+</div>
+
+
+  <div class="map">
+    <h4>Your Current Location</h4>
+    <iframe id="map" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+  <div class="info">
+    <h4>More Information About You</h4>
+    <p>Time Zone: <span id="timezone"></span></p>
+    <p>Date & Time: <span id="datetime"></span></p>
+  </div>
+
+  <div>
+    <h3>Post Offices Near You</h3>
+    <input type="text" id="search" placeholder="Search by Name or Branch">
+    <div class="post-offices" id="post-offices"></div>
+  </div>
+
+  <div class="history">
+    <h3>Search History</h3>
+    <div id="history-list"></div>
+    <button class="delete-btn" onclick="clearHistory()">Delete History</button>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

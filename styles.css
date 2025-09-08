@@ -1,0 +1,87 @@
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1e1e1e;
+      color: white;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background: #2a2a2a;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+    }
+    .card {
+      background: #3a3a5a;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      background: #5a5ab0;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #7878d1;
+    }
+    #details-section {
+      display: none;
+      padding: 20px;
+    }
+    .map {
+      margin: 10px 0;
+    }
+    .info {
+      margin: 10px 0;
+      padding: 10px;
+      background: #2a2a4a;
+      border-radius: 5px;
+    }
+    .post-offices {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .office {
+      background: #4a4a6a;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    input {
+      padding: 8px;
+      width: 100%;
+      margin: 10px 0;
+      border: none;
+      border-radius: 4px;
+    }
+    .history {
+      margin-top: 20px;
+      background: #333;
+      padding: 10px;
+      border-radius: 6px;
+    }
+    .history-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+      border-bottom: 1px solid #444;
+    }
+    .delete-btn {
+      background: red;
+      padding: 5px 10px;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+    }
